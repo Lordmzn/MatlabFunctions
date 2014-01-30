@@ -1,5 +1,5 @@
 function fig = pareto4D(x, y, z, w, a, b, labs, map) 
-% fig = PlotParetoFront(x, y, z, w, a, b, labs, BW, map) 
+% fig = pareto4D(x, y, z, w, a, b, labs, map) 
 %
 % Function to plot a 4D pareto front in 2D assigning the remaining
 % objectives to the dimension of the circles and to the color (summer
@@ -12,7 +12,7 @@ function fig = pareto4D(x, y, z, w, a, b, labs, map)
 %   map         = string to set the colormap (default is Jet), use 'BW' for
 %               grey-scale 
 %
-% MatteoG 19/3/2012
+% MatteoG 30/1/2014
 
 % check number of inputs
 if(nargin<3) 
