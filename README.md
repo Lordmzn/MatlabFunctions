@@ -8,4 +8,4 @@ MatlabFunctions
 
 Copyright (C) 2013 Matteo Giuliani.
 
-The functions in this repository are free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License. These code is distributed WITHOUT ANY WARRANTY. See the GNU Lesser General Public License for more details.
+The functions in this repository are free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License. This code is distributed WITHOUT ANY WARRANTY. See the GNU Lesser General Public License for more details.
