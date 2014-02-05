@@ -1,5 +1,5 @@
-function fig = pareto4D(x, y, z, w, a, b, labs, map) 
-% fig = pareto4D(x, y, z, w, a, b, labs, map) 
+function fig = plotPareto4D(x, y, z, w, a, b, labs, map) 
+% fig = plotPareto4D(x, y, z, w, a, b, labs, map) 
 %
 % Function to plot a 4D pareto front in 2D assigning the remaining
 % objectives to the dimension of the circles and to the color (summer
