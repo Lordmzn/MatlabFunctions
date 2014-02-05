@@ -5,7 +5,7 @@ MatlabFunctions
 
 `tuples_shuffling.m` performs a random shuffling of the tuples (rows) of the input dataset. This operation has been demonstrated to enhance the performance of the Iterative Input Selection algorithm ([Galelli and Castelletti, 2013](http://onlinelibrary.wiley.com/doi/10.1002/wrcr.20339/abstract)).
 
-`plotIIS_selectedInput.m` creates a mesh-plot to represent the set of input (on the rows) selected over multiple runs (on the columns) of the Iterative Input Selection algorithm [Galelli and Castelletti, 2013](http://onlinelibrary.wiley.com/doi/10.1002/wrcr.20339/abstract).
+`plotIIS_selectedInput.m` creates a mesh-plot to represent the set of input (on the rows) selected over multiple runs (on the columns) of the Iterative Input Selection algorithm ([Galelli and Castelletti, 2013](http://onlinelibrary.wiley.com/doi/10.1002/wrcr.20339/abstract)).
 
 
 Copyright (C) 2013 Matteo Giuliani.
