@@ -1,4 +1,4 @@
-function [X, R2] = plotIIS_selectedInput( filename, Nrun ) 
+function [X, R2] = plotIIS_selectedInput( filename, Nvar, Nrun ) 
 
 % [X, R2] = plotIIS_selectedInput( filename, Nrun ) 
 %
@@ -9,6 +9,7 @@ function [X, R2] = plotIIS_selectedInput( filename, Nrun )
 % input:
 %   filename    = string specifying the name of the files containing the
 %               summary of IIS results
+%   Nvar        = number of candidate input variables
 %   Nrun        = number of IIS runs
 %
 % output:
@@ -26,8 +27,8 @@ end
 
 
 % read resuls
-X = nan(14,50);     % selected variables
-R2 = nan(14,50);    % cumulated R2
+X = nan(Nvar,Nrun);     % selected variables
+R2 = nan(Nvar,Nrun);    % cumulated R2
 for i = 1:Nrun
     s1 = ['load -ascii ', filename, '_', num2str(i), '_summary.txt'];
     eval(s1);
@@ -44,7 +45,8 @@ X1(isnan(X1)) = -5;
 figure; 
 subplot(2,1,1); imagesc(X1); 
 ylabel('selected input');
-subplot(2,1,2); plot(max(R2)); 
+subplot(2,1,2); plot(max(R2)); grid on;
+axis([1 Nrun fix(min(max(R2))*100)/100 fix(max(max(R2))*100+1)/100]);
 ylabel('model performance R2');
 xlabel('IIS run');
 
