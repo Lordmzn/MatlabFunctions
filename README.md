@@ -7,7 +7,7 @@ MatlabFunctions
 
 `plotIIS_selectedInput.m` creates a mesh-plot to represent the set of input (on the rows) selected over multiple runs (on the columns) of the Iterative Input Selection algorithm ([Galelli and Castelletti, 2013](http://onlinelibrary.wiley.com/doi/10.1002/wrcr.20339/abstract)).
 
-`plotParallelAxes.m` creates a parallel-axes plot ([Inselberg, 1997](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=636793&tag=1)) to represent the multi-dimensional dataset.
+`plotParallelAxes.m` creates a parallel-axes plot ([Inselberg, 1997](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=636793&tag=1)) to represent a multi-dimensional dataset.
 
 
 Copyright (C) 2013-2014 Matteo Giuliani.
