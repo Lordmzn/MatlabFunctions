@@ -40,12 +40,12 @@ end
 
 % selected variables and model performance over multiple runs
 X1 = X;
-X1(isnan(X1)) = -5;
+X1(isnan(X1)) = Nvar+1;
 
 figure; 
-subplot(2,1,1); imagesc(X1); 
-ylabel('selected input');
-subplot(2,1,2); plot(max(R2)); grid on;
+subplot(2,1,1); imagesc(X1); colormap('Hot')
+ylabel('input ranking');
+subplot(2,1,2); plot(max(R2), 'k', 'LineWidth', 2); grid on;
 axis([1 Nrun fix(min(max(R2))*100)/100 fix(max(max(R2))*100+1)/100]);
 ylabel('model performance R2');
 xlabel('IIS run');
