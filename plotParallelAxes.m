@@ -40,7 +40,7 @@ c = colormap( jet(r) ) ;
 for i=1:r
     hold on; parallelcoords( Y( i,: ), 'Color', c( i,: ) ) ; 
 end
-
+grid on;
 fig=1;
 end
 

@@ -34,9 +34,9 @@ end
 
 
 % read resuls
-X = nan(Nvar,Nrun);     % selected variables
-R2 = nan(Nvar,Nrun);    % cumulated R2
-for i = 1:Nrun
+XX = nan(Nv,Nr);     % selected variables
+R2 = nan(Nv,Nr);    % cumulated R2
+for i = 1:Nr
     s1 = ['load -ascii ', filename, '_', num2str(i), '_summary.txt'];
     eval(s1);
     s2 = ['v = ', filename, '_', num2str(i),'_summary;'];
@@ -47,7 +47,7 @@ end
 
 % selected variables and model performance over multiple runs
 X1 = XX;
-X1(isnan(X1)) = Nvar+1;
+X1(isnan(X1)) = Nv+1;
 figure; imagesc(X1); colormap(hot); title('var selection');
 xlabel('IIS run'); ylabel('selection position');
 
@@ -58,7 +58,7 @@ xlabel('IIS run'); ylabel('R2');
 
 
 % analysis of frequency, position and relative contribution
-vars = [0:Nv];
+vars = [0:Nv-1];
 freq = nan(Nv,1);    % frequency
 avg_pos = nan(Nv,1); % position
 
@@ -87,7 +87,7 @@ RC = mean( Y./repmat(sum(Y),Nv,1), 2 ); % average relative contribution
 MP = mean( sum(Y) ); % average model performance
 
 % output structure
-out.sel_var = X ;
+out.sel_var = XX ;
 out.model_perf = R2 ;
 out.frequency = freq ;
 out.position = avg_pos ;
