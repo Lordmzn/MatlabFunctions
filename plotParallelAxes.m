@@ -12,7 +12,7 @@ function fig = plotParallelAxes( X, id )
 %           id = dimension with respect to which the elements are ordered
 %              and colored
 %
-% MatteoG 28/2/2014
+% Last Update 28/2/2014
 
 % check input consistency
 if(nargin<2)
@@ -37,10 +37,11 @@ Y = sortrows( Z,id ) ;
 c = colormap( jet(r) ) ;
 
 % parallel-axes plot
-figure;
 for i=1:r
     hold on; parallelcoords( Y( i,: ), 'Color', c( i,: ) ) ; 
 end
 
 fig=1;
 end
+
+% This code has been written by Matteo Giuliani (matteo.giuliani@polimi.it)

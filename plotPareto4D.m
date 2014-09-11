@@ -12,7 +12,7 @@ function fig = plotPareto4D(x, y, z, w, a, b, labs, map)
 %   map         = string to set the colormap (default is Jet), use 'BW' for
 %               grey-scale 
 %
-% MatteoG 30/1/2014
+% Last Update 30/1/2014
 
 % check number of inputs
 if(nargin<3) 
@@ -89,3 +89,5 @@ end
 
 fig = 1;
 end
+
+% This code has been written by Matteo Giuliani (matteo.giuliani@polimi.it)

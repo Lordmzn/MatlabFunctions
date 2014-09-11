@@ -14,7 +14,7 @@ function Xshuffled = tuples_shuffling(X)
 %   Xshuffled   = the same dataset (X) after random shuffling performed on
 %               the rows of the matrix
 %
-% MatteoG 23/1/2014
+% Last Update 23/1/2014
 
 
 % dimensions of the input matrix 
@@ -33,6 +33,6 @@ Xshuffled = Y;
 
 end
 
-
+% This code has been written by Matteo Giuliani (matteo.giuliani@polimi.it)
 
 
