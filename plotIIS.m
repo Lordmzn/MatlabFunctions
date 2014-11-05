@@ -24,6 +24,9 @@ function out = plotIIS( filename, Nv, Nr )
 %   fig.3       = parallel axes plot showing selection frequency, average
 %               position and average relative contribution
 %
+% Copyright 2014 Matteo Giuliani, Post-doc Research Fellow, Politecnico di Milano
+% Email:    matteo.giuliani@polimi.it
+% Wesite:   http://home.deib.polimi.it/giuliani/
 % Last Update 11/9/2014
 
 % check number of inputs

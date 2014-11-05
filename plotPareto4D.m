@@ -12,6 +12,9 @@ function fig = plotPareto4D(x, y, z, w, a, b, labs, map)
 %   map         = string to set the colormap (default is Jet), use 'BW' for
 %               grey-scale 
 %
+% Copyright 2014 Matteo Giuliani, Post-doc Research Fellow, Politecnico di Milano
+% Email:    matteo.giuliani@polimi.it
+% Wesite:   http://home.deib.polimi.it/giuliani/
 % Last Update 30/1/2014
 
 % check number of inputs
